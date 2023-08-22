@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta content="text/html; charset=ISO-8859-1">
+    <title>COFFEE!</title>
+</head>
+<font color="white" style="font-size: 30px"/>
+<body background="espresso1.jpg">
+<h1><font face="Comic Sans MS"> Welcome coffee lovers!</font></h1>
+<p> Dobrodosli na vas omiljeni sajt :) </p>
+<p>Idi na stranicu <a href="https://www.youtube.com/watch?v=VLkHH9w1Ufc">Cafe music</a></p>
+
+<form action="#" th:action="@{/login}" th:object="${user}" method="post">
+
+    <input type="text" name="username" class="form-control" th:field="*{username}"
+           placeholder="Username" style="font-size: 20px"><br>
+    <input type="password" name="password" class="form-control" th:field="*{password}"
+           placeholder="Password" style="font-size: 20px"><br>
+    <input type="submit" class="btn btn-info"
+           value="Prijavi se" style="font-size: 20px">
+</form>
+</body>
+</html>

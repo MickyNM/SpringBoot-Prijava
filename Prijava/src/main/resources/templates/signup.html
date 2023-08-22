@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta content="text/html" charset="ISO-8859-1">
+    <title>COFFEE</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css"/>
+    <font color="white"/>
+</head>
+<body style="margin: 30px;background-color: #595959;">
+
+<center><h1 style="font-size: 50px;font-style: bold" id="naslov"><b><i>Dobro dosao</i></b></h1></center>
+<p style="font-size: 25px">Preporucujemo da pogledate stranicu <a
+        href="https://savoredsips.com/different-types-of-coffee-drinks/">Coffee
+    types</a></p>
+<img src="espresso.jpg" style="width: 20%; float:left; margin-right: 5em; margin-bottom: 1em"/>
+<img src="types.jpg" style="width: 35%; float:right; margin-left: 5em"/>
+<hr>
+<p style="font-size:30px">Samo za prave ljubitelje kafe...</p>
+<ul style="list-style-type:circle;font-size:25px">
+    <li><a href="https://mag-nes.com/priprema-espresso-kafe-kako-pripremiti-espresso-kafu-recepti/">Espresso</a></li>
+    <li><a href="https://sr.wikipedia.org/wiki/Turska_kafa/">Turska</a></li>
+    <li><a href="https://sr.wikipedia.org/wiki/%D0%9C%D0%B0%D0%BA%D0%B8%D1%98%D0%B0%D1%82%D0%BE/">Macchiato</a></li>
+    <li><a href="https://sr.wikipedia.org/sr-ec/%D0%9A%D0%B0%D1%84%D0%B0">Istorijat</a></li>
+</ul>
+<hr>
+<br>
+<iframe src="https://www.healthline.com/nutrition/coffee-good-or-bad"
+        style="width:60%; height:500px; border:none;"></iframe>
+<form th:action="@{/logout}" method="post">
+    <input type="submit" class="btn btn-info" value="Odjava" style=" font-size:25px"/>
+
+</form>
+<a style=" font-size:15px" href="#naslov">Skoci na vrh</a>
+<p>Copyright 2018 &copy; </p>
+</body>
+</html>

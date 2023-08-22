@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Welcome</title>
+</head>
+<body background="coffee1.jpg">
+<font color="white" style="font-size: 45px; font-style: Italic"/>
+<center>
+    <div class="container text-center">
+        <h1>Welcome to Coffe.net</h1>
+        <form th:action="@{/login}" method="post">
+            <input type="submit" class="btn btn-info" value="Prijava" style=" font-size:35px; font-style:Italic"/>
+        </form>
+    </div>
+</center>
+</body>
+</html>
